@@ -1,0 +1,81 @@
+body {
+    background-color: lightblue; /*background color*/
+}
+
+.flex-container {
+    display:flex;  /*create flex containers*/
+}
+
+.flex-column {
+    flex-direction: column; /*flex containers are natural horizontal*/
+}
+
+.flex-wrap {
+    flex-wrap:wrap; /*breaks container into rows as well as columns*/
+}
+
+.flex-center {
+    justify-content: center; /*align on main axis*/
+    align-items: center; /*aligns items on cross axis*/
+}
+
+.board-container {
+    height: 100%; /*takes up full width*/
+    width: 100%;
+}
+
+.board {
+    width: 618px; /*sets width of board. height is handled by amount of flex box squares*/
+    cursor: pointer; /*creates cursor when mouse hovers over board*/
+}
+
+.square {
+    width: 200px; /*board width is height plus width PLUS BORDERS*/
+    height: 200px;
+    border: 3px solid purple; /*defines border*/
+    color: black; /*font color*/
+    font-size: 220px; /*takes up container square. made to center in our <div> html*/
+   
+}
+
+.cell:hover {
+    background-color: pink;  /*background is pink when you hover*/
+}
+
+.title {
+    font-size: 42px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.winner {
+    display: none;
+    padding: 15px;
+    font-size: 45px;
+    color: black;
+}
+
+.reset {
+    padding: 10px;
+    margin: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.endgame { /*creates an endgame message. padding and positioning included. as is text specificationls*/
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: plum;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
